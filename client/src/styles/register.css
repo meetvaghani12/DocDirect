@@ -1,0 +1,93 @@
+@import url(app.css);
+
+.register-section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light-blue); /* Background color to match the theme */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content vertically */
+}
+
+.register-container {
+  display: flex; /* Ensure flex properties are applied */
+  flex-direction: column;
+  gap: 2rem;
+  width: 30%;
+  background-color: var(--white); /* Background color for container */
+  padding: 2rem; /* Padding for spacing */
+  border: 1px solid var(--light-blue); /* Border to match theme */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15); /* Box shadow for depth */
+}
+
+.form-heading {
+  font-size: 2rem;
+  color: var(--bold-text-color); /* Heading color */
+}
+
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-input,
+textarea,
+select {
+  font-size: 1rem;
+  background-color: var(--white); /* Background color for inputs */
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--light-text-color); /* Border color for inputs */
+  border-radius: 5px; /* Rounded corners */
+  font-family: var(--font-family);
+  color: var(--bold-text-color); /* Text color for readability */
+}
+
+.form-input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--dark-blue); /* Border color on focus */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.login-link {
+  color: var(--darker-blue); /* Color for login link */
+}
+
+@media (max-width: 1184px) {
+  .register-container {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .register-container {
+    width: 35%;
+  }
+}
+
+@media (max-width: 746px) {
+  .register-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .register-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 408px) {
+  .register-container {
+    width: 70%;
+  }
+}

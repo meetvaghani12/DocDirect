@@ -1,0 +1,71 @@
+@import url('app.css');
+
+.hero {
+  display: flex;
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  background-color: var(--light-blue); /* Background color for visual consistency */
+  color: var(--bold-text-color); /* Text color for visual consistency */
+  padding: 2rem; /* Padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: var(--bold-text-color); /* Header color matches the scheme */
+}
+
+.hero-img {
+  flex: 1;
+  max-width: 100%; /* Ensures image does not exceed container width */
+  overflow: hidden; /* Prevents image from overflowing */
+}
+
+.hero-img img {
+  width: auto; /* Adjust width automatically */
+  max-width: 80%; /* Limits the width of the image */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.about {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  background-color: var(--white); /* Background color for visual consistency */
+  color: var(--bold-text-color); /* Text color for visual consistency */
+  padding: 2rem; /* Padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+}
+
+@media screen and (max-width: 770px) {
+  .hero {
+    height: auto;
+  }
+  .hero, .about {
+    flex-direction: column;
+  }
+  .hero-content {
+    margin-top: 2rem;
+    align-items: center;
+  }
+  .hero-content h1 {
+    text-align: center;
+  }
+  .about-heading {
+    margin-top: 4rem;
+  }
+}

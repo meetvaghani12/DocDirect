@@ -1,0 +1,18 @@
+.notif-section {
+  height: 70vh;
+  display: flex;
+  justify-content: flex-start; /* Ensures content is aligned to the start */
+  align-items: center; /* Added to center content vertically */
+  padding: 1rem; /* Added padding for spacing */
+}
+
+.disable-btn {
+  cursor: not-allowed; /* Updated cursor for disabled state */
+  background-color: var(--light-blue); /* Added background color to match theme */
+  color: var(--bold-text-color); /* Text color to match theme */
+  border: 1px solid var(--bold-text-color); /* Border color to match theme */
+}
+
+.disable-btn:hover {
+  background-color: rgba(0, 128, 0, 0.528) !important; /* Maintain original hover effect */
+}
